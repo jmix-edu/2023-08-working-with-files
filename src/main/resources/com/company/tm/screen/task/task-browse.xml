@@ -45,6 +45,8 @@
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
+                <action id="excelExport" type="excelExport"/>
+                <action id="jsonExport" type="jsonExport"/>
             </actions>
             <columns>
                 <column id="name"/>
@@ -52,6 +54,8 @@
                 <column id="assignee"/>
                 <column id="project"/>
                 <column id="priority"/>
+                <column id="attachment"/>
+                <column id="attachmnet2"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"
@@ -60,6 +64,8 @@
                 <button id="editBtn" action="tasksTable.edit"/>
                 <button id="removeBtn" action="tasksTable.remove"/>
                 <button id="importBtn" caption="msg://importBtn.caption"/>
+                <button id="tasksTableExcelExportBtn" action="tasksTable.excelExport"/>
+                <button id="tasksTableJsonExportBtn" action="tasksTable.jsonExport"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
